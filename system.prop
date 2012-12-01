@@ -1,0 +1,80 @@
+#
+# system.prop for t100k
+#
+
+## Radio
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+ro.telephony.default_network=0
+ro.telephony.ril_class=SkyQualcommRIL
+ro.telephony.ril.v3=qcomuiccstack
+
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=180
+debug.sf.hw=1
+debug.composition.type=dyn
+ro.sf.compbypass.enable=1
+ro.sf.lcd_density=160
+dalvik.vm.heapsize=256m
+com.qc.hardware=true
+
+ro.opengles.version=131072
+persist.fuse_sdcard=false
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+
+#system props for time-services
+persist.timed.enable=true
+
+# System props for audio
+persist.audio.fluence.mode=endfire
+persist.audio.vr.enable=false
+
+#
+# system prop for opengles version
+#
+# 131072 is decimal for 0x20000 to report version 2
+ro.opengles.version=131072
+
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+
+#
+# system prop for Bluetooth FTP profile
+#
+ro.qualcomm.bluetooth.ftp=true
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+ro.bluetooth.request.master=true
+# system property for Bluetooth discoverability time out in seconds
+# 0: Always discoverable
+#debug.bt.discoverable_time=0
+
+# System property for cabl  #[BIH] disable this flag. EF33S/34K don't use Qualcomm CABL(Contents Adaptive Backlight) function.
+#ro.qualcomm.cabl=1
+ro.qualcomm.cabl=0
+
+#
+# System prop for sending transmit power request to RIL during WiFi hotspot on/off
+#
+ro.ril.transmitpower=true
+
+#
+# Simulate sdcard on /data/media
+#
+persist.fuse_sdcard=false
+
+#
+# system prop for sending power off request to RIL during phone shutdown
+#
+ro.ril.shutdown=true
+dalvik.vm.dexopt-data-only=1

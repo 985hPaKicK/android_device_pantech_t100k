@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<DeviceInfo>
+<Display>
+	<MainLCD>
+		<ResolutionWidth>480</ResolutionWidth>
+		<ResolutionHeight>800</ResolutionHeight>
+		<ColorDepth>24</ColorDepth>
+	</MainLCD>
+</Display>
+<Graphic>
+	<ImageFormat>
+		<Format>NBMP</Format>
+		<Format>JPEG</Format>
+		<Format>PNG</Format>
+	</ImageFormat>
+</Graphic>
+<Audio>
+	<SoundCodec>
+		<Format>AAC LC/LTP</Format>
+		<Format>HE-AACv1</Format>
+		<Format>HE-AACv2</Format>
+		<Format>AMR-NB</Format>
+		<Format>AMR-WB</Format>
+		<Format>MP3</Format>
+		<Format>MIDI</Format>
+		<Format>OGG</Format>
+		<Format>WAVE</Format>		
+		<Format>G.711</Format>
+	</SoundCodec>
+	<VODCodec>
+		<Format>MPEG-4</Format>
+		<Format>H.263</Format>
+		<Format>H.264</Format>
+		<Format>K3G</Format>
+		<Format>3GPP</Format>
+		<Format>3GPP2</Format>
+		<Format>AK3G</Format>
+	</VODCodec>
+</Audio>
+<Video>
+	<MSS>WVGA</MSS>
+	<MBR>MPEG4|2000</MBR>
+	<MBR>H.264|2000</MBR>
+	<FPS>MPEG4|30</FPS>
+	<FPS>H.264|30</FPS>
+</Video>
+<Container>
+	<FileType>3GPP</FileType>
+	<FileType>3GPP2</FileType>
+	<FileType>K3G</FileType>
+	<FileType>AK3G</FileType>
+</Container>
+<OemInfo>
+	<Manufacturer>PAN</Manufacturer>
+	<ModelName>IM-T100K</ModelName>
+	<DeviceType>HSPA+</DeviceType>	
+	<ModemType>1</ModemType>
+</OemInfo>
+<AdditionalDevice>
+	<Module>DMB</Module>
+	<Module>Bluetooth</Module>
+	<Module>Camera</Module>
+	<Module>FrontCamera</Module>
+</AdditionalDevice>
+<AdditionalService>
+	<IWLAN>N</IWLAN>
+	<NFC>Y</NFC>
+	<KTMMS>Y</KTMMS>
+</AdditionalService>
+<SensorList>
+	<Sensor>ACCELEROMETER</Sensor>
+	<Sensor>GYROSCOPE</Sensor>
+	<Sensor>LIGHT</Sensor>
+	<Sensor>MAGNETIC_FIELD</Sensor>		
+	<Sensor>PROXIMITY</Sensor>	
+</SensorList>
+<Connectivity>
+	<Module>WCDMA</Module>
+	<Module>WIFI</Module>
+</Connectivity>
+<DataSync>
+	<Mode>0</Mode>
+</DataSync>
+<ExternalStorage>
+	<Volume>/external_sd</Volume>
+</ExternalStorage>
+<HumanInterface>
+	<Touch>Y</Touch>
+</HumanInterface>
+<EAP-AKA>
+	<Support>Y</Support>
+	<ContentsProvider>Y</ContentsProvider>
+</EAP-AKA>
+<CodecAttribute>
+	<H.264DEC>OMX.qcom.video.decoder.avc:kRequiresAllocateBufferOnInputPorts|kRequiresAllocateBufferOnOutputPorts|kDefersOutputBufferAllocation|kDoesNotRequireMemcpyOnOutputPort</H.264DEC>
+	<MPEG4DEC>OMX.qcom.video.decoder.mpeg4:kRequiresAllocateBufferOnInputPorts|kRequiresAllocateBufferOnOutputPorts|kDefersOutputBufferAllocation|kDoesNotRequireMemcpyOnOutputPort</MPEG4DEC>
+	<AACDEC>AACDecoder:</AACDEC>
+</CodecAttribute>
+</DeviceInfo >
