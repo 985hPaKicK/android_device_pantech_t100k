@@ -25,8 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
 
-
-
 # Scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
@@ -54,36 +52,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
     $(LOCAL_PATH)/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
     $(LOCAL_PATH)/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
-    $(LOCAL_PATH)/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
-    $(LOCAL_PATH)/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
-    $(LOCAL_PATH)/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
-    $(LOCAL_PATH)/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
-    $(LOCAL_PATH)/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
-    $(LOCAL_PATH)/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
-
-# Jellybean Adreno firmware
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/firmware/a225p5_pm4.fw:/system/etc/firmware/a225p5_pm4.fw \
-    $(LOCAL_PATH)/firmware/a225_pfp.fw:/system/etc/firmware/a225_pfp.fw \
-    $(LOCAL_PATH)/firmware/a225_pm4.fw:/system/etc/firmware/a225_pm4.fw \
+    $(LOCAL_PATH)/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     $(LOCAL_PATH)/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
     $(LOCAL_PATH)/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
     $(LOCAL_PATH)/firmware/yamato_pfp.fw:/system/etc/firmware/yamato_pfp.fw \
     $(LOCAL_PATH)/firmware/yamato_pm4.fw:/system/etc/firmware/yamato_pm4.fw
 
-# Jellybean Adreno libs
+# DSPS firmware
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/jb_libs/lib/libc2d2_z180.so:/system/lib/libc2d2_z180.so \
-    $(LOCAL_PATH)/jb_libs/lib/libC2D2.so:/system/lib/libC2D2.so \
-    $(LOCAL_PATH)/jb_libs/lib/libgsl.so:/system/lib/libgsl.so \
-    $(LOCAL_PATH)/jb_libs/lib/libOpenVG.so:/system/lib/libOpenVG.so \
-    $(LOCAL_PATH)/jb_libs/lib/libsc-a2xx.so:/system/lib/libsc-a2xx.so \
-    $(LOCAL_PATH)/jb_libs/egl/eglsubAndroid.so:/system/lib/egl/eglsubAndroid.so \
-    $(LOCAL_PATH)/jb_libs/egl/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
-    $(LOCAL_PATH)/jb_libs/egl/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
-    $(LOCAL_PATH)/jb_libs/egl/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
-    $(LOCAL_PATH)/jb_libs/egl/libGLESv2S3D_adreno200.so:/system/lib/egl/libGLESv2S3D_adreno200.so \
-    $(LOCAL_PATH)/jb_libs/egl/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so
+    $(LOCAL_PATH)/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
+    $(LOCAL_PATH)/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
+    $(LOCAL_PATH)/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
+    $(LOCAL_PATH)/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
+    $(LOCAL_PATH)/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
 
 # bcm4329 firmware
 PRODUCT_COPY_FILES += \
