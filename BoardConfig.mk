@@ -92,13 +92,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 #BOARD_TOUCH_RECOVERY := true
 
 # Wifi related defines
-#WIFI_BAND                        := 802_11_ABG
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER	 := WEXT
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
 BOARD_WLAN_DEVICE                := bcm4329
-BOARD_HOSTAPD_DRIVER             := WEXT
-BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_wext
 WIFI_DRIVER_FW_PATH_STA          := "/system/etc/wl/bcm43291.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/etc/wl/bcm43291_apsta.bin"
 WIFI_DRIVER_FW_PATH_P2P          := "/system/etc/wl/bcm43291_p2p.bin"
