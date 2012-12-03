@@ -371,27 +371,9 @@ service qcom-wifi /system/bin/sh /system/etc/init.qcom.wifi.sh
     class late_start
     oneshot
 
-service wifi-polling /system/bin/sh /system/etc/init.qcom.sdio.sh 1
-    class late_start
-    user root
-    disabled
-    oneshot
-
-service wifi-unpolling /system/bin/sh /system/etc/init.qcom.sdio.sh 0
-    class late_start
-    user root
-    disabled
-    oneshot
-
 on property:sys.boot_completed=1
     start qcom-post-boot
     start qmuxd
-
-on property:sys.wifi_insmod=1
-    start wifi-polling
-
-on property:sys.wifi_insmod=0
-    start wifi-unpolling
 
 service atfwd /system/bin/ATFWD-daemon
     class late_start
