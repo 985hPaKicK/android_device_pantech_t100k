@@ -81,3 +81,8 @@ persist.fuse_sdcard=false
 #
 ro.ril.shutdown=true
 dalvik.vm.dexopt-data-only=1
+
+#
+# select proximity sensor type
+# default : No5, racer : Racer
+persist.proximity_type=default
